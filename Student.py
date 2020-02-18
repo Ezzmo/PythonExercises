@@ -1,13 +1,18 @@
 class Student:
-    def __init__(self, name, age, subjects):
+    def __init__(self, name, age, mscore, sscore, escore):
         self.name = name
         self.age = age
-        self.subjects = subjects
+        self.mscore = mscore
+        self.sscore = sscore
+        self.escore = escore
     
-    def testAVG(self,score1, score2, score3):
-        avg=(score1+score2+score3)/3
-        return avg
+    def testAVG(self):
+        try:
+            avg=(self.mscore+self.sscore+self.escore)/3
+            return avg
+        except:
+            print("Invalid score values,")
 
-Mo = Student("Mo",24,["Maths","Physics","Chemistry"])
-print(Mo.subjects)
-print(Mo.testAVG(72,68,92))
+Mo = Student("Mo",24,28,28,32)
+
+print(Mo.testAVG())
