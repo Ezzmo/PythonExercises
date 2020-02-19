@@ -1,0 +1,12 @@
+Setting up a virtual environment and conducting tests:
+Inside the relevant git repository (clone it), create applications and tests folders
+Initialise both folders as packages
+Install a virtual environment
+Create a .gitignore file
+Activate the virtual environment to work from it
+Pip install pytest and pytest-cov
+This now includes all requirements needed to test
+Pip freeze > requirements.txt: this creates the version list so that the environment can be recreated.
+Edit the .gitignore accordingly, so that pushing up this environment only includes the necessary files.
+The necessary files are the applications, tests, .gitignore and requirements. Pytest also creates cache files within the tests and applications folder, add those to .gitignore 
+The git repository is now ready for anyone to clone and conduct the tests.
