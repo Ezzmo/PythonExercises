@@ -11,7 +11,7 @@ class Student:
             avg=(self.mscore+self.sscore+self.escore)/3
             return avg
         except:
-            print("Invalid score values,")
+            print("Invalid score values")
 
 Mo = Student("Mo",24,28,28,32)
 

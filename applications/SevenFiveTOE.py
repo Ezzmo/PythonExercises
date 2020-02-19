@@ -5,4 +5,3 @@ def sevenfivedivision(n,m):
             solutionarray.append(i)
     stringsol=str(solutionarray).strip('[]')
     return stringsol
-print(sevenfivedivision(20,45))
