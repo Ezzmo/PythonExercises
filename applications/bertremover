@@ -1,0 +1,10 @@
+def bertremover(string):
+    splitstring = (string.casefold()).split("bert")
+    if len(splitstring) == 3:
+        return splitstring[1][::-1]
+    else:
+        return ""
+
+print(bertremover("dkjfhbertlnooblessbertklf"))
+print(bertremover("dkjfhbertlnooblessbertklfdkjfhbertlnooblessbertklf"))
+print(bertremover("dkjfhbertlnooblessklf"))
